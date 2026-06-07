@@ -1,0 +1,202 @@
+\documentclass[%singlesided,
+               doublesided,
+               paper=a4,
+               fontsize=10pt
+              ]{my-resume}
+\NeedsTeXFormat{LaTeX2e}
+\RequirePackage{xcolor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength\highlightwidth{8cm}
+\setlength\headerheight{2cm}
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}     
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{fontspec}
+\setmainfont{Roboto}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CONFIGURAÇÃO DOS LINKS (Remove as caixas coloridas)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,      
+    linkcolor=black,      
+    filecolor=black,      
+    urlcolor=black,       
+    emailcolor=black
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Cores novas usando códigos Hexadecimais
+\definecolor{deepblue}{HTML}{0B1D3A}     % Azul marinho bem escuro
+\definecolor{lightgray}{HTML}{F0F4F8}    % Cinza azulado bem claro para o fundo
+\definecolor{stargold}{HTML}{D4AF37}     % Dourado para os detalhes
+
+% Associando as cores criadas aos elementos
+\colorlet{highlightbarcolor}{lightgray}
+\colorlet{headerbarcolor}{deepblue}
+
+\colorlet{accent}{stargold}
+\colorlet{heading}{deepblue}
+\colorlet{emphasis}{deepblue}
+\colorlet{body}{darkgray}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}                
+
+\begin{center}
+    \color{white}
+    {\Huge\bfseries Luísa Valias Ferreira} \\
+    \vspace{0.15cm} % Pequeno espaço entre o nome e o subtítulo
+    {\large Graduanda em Astronomia}
+\end{center}
+\vspace{1.5em}
+
+\highlightbar{
+
+    \section{Contato}
+    
+    \email{luisa24@ov.ufrj.br}
+    \phone{+55 (41) 99779-4900}
+    \linkedin{Luísa V. Ferreira}{https://www.linkedin.com/in/luísa-v-ferreira-120606}
+    
+    \section{Habilidades}
+    
+    \skillsection{Programação}
+    \skill{Python}{3}
+    \skill{LaTeX}{1}
+    
+    \vspace{0.5em}
+    \skillsection{Sistemas Operacionais}
+    \skill{Linux}{4}
+    \skill{Windows}{4}
+    
+    \vspace{0.5em}
+    \skillsection{Software \& Tools}
+    \skill{Visualização}{3}
+    (e.g. matplotlib, ...)\\
+    \skill{Analise de dados}{3}
+    (e.g. numpy, pandas, ...)\\
+    \skill{Office}{4}
+    
+    \vspace{0.5em}
+    \skillsection{Línguas}
+    \skill{Inglês}{5}
+    \skill{Espanhol}{3}
+    \bigskip
+    
+    \section{Certificados}
+    \simpleskill{Certificação de proficiência em inglês– 2024 Duolingo English Test - Nota: 135}
+    \vspace{0.5em}
+    \simpleskill{Curso de Astrofísica- 2022-2023- EdX Universidade Nacional da Austrália}
+
+}
+\mainbar{
+    \section{Resumo}
+    Graduanda em Astronomia pelo Observatório do Valongo (UFRJ), atualmente no 5º período. Bolsista de Iniciação Científica com experiência no desenvolvimento de projetos de pesquisa, análise de dados estatísticos e programação em Python. Interessada nas áreas de Astrofísica, análise de dados e divulgação científica.
+    
+    \section[\faGears]{EXPERIÊNCIAS PROFISSIONAIS}
+    
+    \textbf{2024 -- Presente} \\
+    \textbf{Observatório do Valongo - UFRJ} \\
+    \textit{Bolsista de Iniciação Científica}\\
+    \vspace{-0.4cm}
+    \begin{itemize}[leftmargin=0.4cm, topsep=0pt, itemsep=2pt]
+        \item \small Desenvolver pesquisa focada em pequenos corpos do Sistema Solar.
+        \item \small Analisar e organizar dados observacionais e imagens do asteroide troiano (1867) Deiphobus.
+        \item \small Investigar características físicas do objeto por meio de dados de ocultação estelar para determinação de forma e tamanho.
+    \end{itemize}
+    
+    \vspace{0.6em}
+
+    \textbf{2024 -- 2025} \\
+    \textbf{Observatório do Valongo - UFRJ} \\
+    \textit{Extensionista no Valongo de Portas Abertas} \\
+    \vspace{-0.4cm}
+    \begin{itemize}[leftmargin=0.4cm, topsep=0pt, itemsep=2pt]
+        \item \small Mediar e guiar visitações públicas e escolares às instalações do Observatório.
+        \item \small Atuar na divulgação científica explicando conceitos de Astronomia, reconhecimento de constelações e história da ciência no Brasil.
+        \item \small Operar e manusear telescópios durante sessões de observação noturna.
+    \end{itemize}
+
+    \vspace{0.6em}
+    
+    \textbf{2022 -- 2023} \\
+    \textbf{Freelancer} \\
+    \textit{Professora particular de inglês} \\
+    \vspace{-0.4cm}
+    \begin{itemize}[leftmargin=0.4cm, topsep=0pt, itemsep=2pt]
+        \item \small Planejar e organizar cronogramas de aulas personalizadas e atividades didáticas focadas no desenvolvimento do estudante.
+    \end{itemize}
+    
+    \vspace{0.6em}
+    
+    \textbf{2021 -- 2022} \\
+    \textbf{Globalizando} \\
+    \textit{Professora voluntária de inglês} \\
+    \vspace{-0.4cm}
+    \begin{itemize}[leftmargin=0.4cm, topsep=0pt, itemsep=2pt]
+        \item \small Elaborar planos de aula e tarefas complementares de linguagem para projetos sociais de ensino.
+    \end{itemize}
+
+    \vspace{0.6em}
+    
+    \textbf{2021 -- 2022} \\
+    \textbf{Universidade Federal do Paraná (UFPR)} \\
+    \textit{Estagiária LAMIR-UFPR} \\
+    \vspace{-0.4cm}
+    \begin{itemize}[leftmargin=0.4cm, topsep=0pt, itemsep=2pt]
+        \item \small Realizar a catalogação de dados e a organização de materiais e insumos de pesquisa no Laboratório de Análises de Minerais e Rochas.
+        \item \small Criar conteúdos e posts para redes sociais com foco em divulgação científica, traduzindo rotinas laboratoriais e projetos de pesquisa para o público geral.
+    \end{itemize}
+
+}
+\makebody
+\clearpage
+
+
+\pagestyle{highlightmain}
+% The highlightbar needs to be filled to display mainbar contents correctly in singlesised mode
+% For an empty highlightbar, fill with empty space
+\highlightbar{\hfill}
+\mainbar{
+
+    
+    \section[\faMortarBoard]{Educação}
+    \textbf{2024 -- Presente} \\
+    \textbf{Universidade Federal do Rio de Janeiro (UFRJ)} \\
+    \textit{Bacharelado em Astronomia}
+
+    \section{Prêmios e Consquistas}
+    \achievement{Menção honrosa na 14ª SIAC com o projeto "Estudo do troiano (1867) Deiphobus através de ocultações estelares" }
+
+    \section{Soft Skills}
+    \smallskip
+    
+    \tag{Análise de dados} \tag{Pesquisa Acadêmica} \\
+    \medskip % Espaço vertical sutil entre as linhas de tags
+    \tag{Divulgação Científica} \tag{Didática e Ensino} \\
+    \medskip
+    \tag{Organização de Tarefas} \tag{Proatividade}
+    
+}
+\makebody
+
+\end{document}
